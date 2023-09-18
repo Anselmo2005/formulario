@@ -1,3 +1,10 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+
+
 header h1{
     font-family: 'Archivo', sans-serif;
     font-weight: bold;
@@ -44,10 +51,20 @@ form{
     min-height: 300px;
     border-radius: 8px;
     padding: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
 
 }
 fieldset{
     border: none;
+}
+.fieldset-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
 }
 legend{
     font-family: 'Archivo', sans-serif;
@@ -58,6 +75,59 @@ legend{
     padding-bottom: 16px;
     border-bottom:1px solid #e6e6f0 ;
     
+}
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
 
+}
+.input-wrapper label, .checkbox-wrapper label{
+    font-family: 'Poppins';
+    font-size: 14px;
+    line-height: 24px;
+    color: #4e4958;
+    margin-bottom: 10px;
 
+}
+.input-wrapper label span{
+    margin-left: 14px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #6c6a71;
+}
+.input-wrapper label span:hover{
+   color: #95919e;
+}
+.input-wrapper input, .input-wrapper textarea, .input-wrapper select {
+    background: #fafafc;
+    border: 1px solid #e6e6f0;
+    border-radius: 10px;
+    height: 50px;
+    padding: 0 24px;
+    font-family: 'Poppins';
+    font-size: 15px;
+    line-height: 28px;
+    color: #6c6a71;
+
+}
+.input-wrapper textarea{
+    padding: 0;
+    height: 170px;
+}
+.input-wrapper select{
+    appearance: none;
+    -webkit-appearance: none;
+    
+}
+.col-3{
+   display: flex;
+   gap: 20px; 
+
+}
+.col-3 > div:nth-child(1){
+    width: 100%;
+
+}
+.footer{
+    background: white;
 }
